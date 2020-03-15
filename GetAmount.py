@@ -4,19 +4,20 @@ def GetAmount(inFile):
 
     f = open(inFile,"r")
     Amount = "((([0-9]+)\.([0-9]+))|([0-9]+))"
-    ans = '-1'
+    ans = None
     for line in f:
         x = re.search(Amount, line)
         if x and findPattern(line)  :
             ans = x.group()
-            print(ans)
-    #print(ans)
     f.close()
+    print(ans)
+    return ans 
 
 def findPattern( line ):
     
-    if line.find('Total') !=-1 : return True 
-    # Add other such statements
+    if re.search(r'Total',line,re.IGNORECASE) : return True 
+    # Add other such statements and don't forget to add ignoreCase 
     return False; 
 
-GetAmount("out_text.txt")
+if __name__ == "__main__":
+    GetAmount("out_text.txt")
