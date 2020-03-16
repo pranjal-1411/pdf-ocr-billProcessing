@@ -4,9 +4,9 @@ def GetCategory(inFile):
 
     f = open(inFile,"r")
     #Add more such common occuring value 
-    category_food_pattern = "food|swiggy|zomato|delivery"
-    category_travel_pattern = "travel|ola|uber|ride|driver|car|pickup|ride"
-    category_acco_pattern = "hotel|stay|room|accomodation" 
+    category_food_pattern = "food|swiggy|zomato|delivery|order|restaurant"
+    category_travel_pattern = "travel|ola|uber|ride|driver|car|pickup|flight|train|bus"
+    category_acco_pattern = "hotel|stay|room|accomodation|oyo" 
     ans = None
     for line in f:
         x = re.search(category_food_pattern,line,re.IGNORECASE)
