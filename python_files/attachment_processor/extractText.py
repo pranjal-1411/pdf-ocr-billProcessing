@@ -37,7 +37,16 @@ def generateTextFile( imagePathList) :
         f.write(text) 
            
 
-
+if __name__ == "__main__":
+    imagePathList = []    
+    pages = convert_from_path("./bill3.pdf") 
+    image_counter = 1
+    for page in pages: 
+        filename = "page_"+str(image_counter)+".jpg"
+        imagePathList.append(filename)
+        page.save(filename, 'JPEG') 
+        image_counter = image_counter + 1   
+    generateTextFile(imagePathList)
 
 
  

@@ -5,7 +5,7 @@ from datetime import date
 def GetDate(inFile):
 
     extractedDate = extractDate(inFile)
-    if extractedDate == -1 : return None 
+    if extractedDate == None : return None 
     dateObject = None
  
     if re.search(r'\d{2}/\d{2}/\d{4}' , extractedDate ) :
@@ -24,7 +24,7 @@ def extractDate( inFile ):
 
     f = open(inFile,"r")
     DatePattern = "((\d{2}/\d{2}/\d{4})|(\d{4}/\d{2}/\d{2})|(\d{4}-\d{2}-\d{2})|(\d{2}-\d{2}-\d{4}))"
-    ans = -1
+    ans = None
     for line in f:
        # print(line)
         x = re.search(DatePattern, line)
