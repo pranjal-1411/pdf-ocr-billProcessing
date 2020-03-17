@@ -1,6 +1,6 @@
 import re
 
-def GetAmount(inFile):
+def getAmount(inFile):
 
     f = open(inFile,"r")
     Amount = "((([0-9]+)\.([0-9]+))|([0-9]+))"
@@ -20,4 +20,4 @@ def findPattern( line ):
     return False; 
 
 if __name__ == "__main__":
-    GetAmount("out_text.txt")
+    getAmount("out_text.txt")

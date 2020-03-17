@@ -1,6 +1,6 @@
 import re
 
-def GetCategory(inFile):
+def getCategory(inFile):
 
     f = open(inFile,"r")
     #Add more such common occuring value 
@@ -20,4 +20,4 @@ def GetCategory(inFile):
 
 
 if __name__ == "__main__":
-    print(GetCategory("out_text.txt"))
+    print(getCategory("out_text.txt"))

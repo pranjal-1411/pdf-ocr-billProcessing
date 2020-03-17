@@ -1,0 +1,84 @@
+G swiccy
+
+Thanks for choosing Swiggy, Sachin Bhadoria! Here are your order details:
+
+Order No: #63647603260 Delivery To:
+Order placed at: 01/02/2020, 09:23 PM Sachin Bhadoria
+Order delivered at: 01/02/2020, 09:46 PM Gulmohar Garden, Tilakraidi, Jharkhand, India
+
+Order Status: Delivered
+
+Ordered from:
+Bahamas Fusion Kitchen
+
+Swastika Complex, Main Road, Steel Gate, Kusum Vihar, Murli
+Nagar, Dhanbad, Jharkhand, India
+
+Item Name Quantity Price
+Chicken Dum Biryani 1 = 189
+Item Total: X 189
+
+Delivery Charges: = 20
+
+Discount Applied (SWIGGYIT): -% 94.5
+
+Taxes: X 5.67
+
+Grand Total: 120
+
+Disclaimer: This is an acknowledgement of Delivery of the Order and not an actual invoice. Details mentioned above including
+the menu prices and taxes (as applicable) are as provided by the Restaurant to Swiggy. Responsibility of charging (or not
+charging) taxes lies with the Restaurant and Swiggy disclaims any liability that may arise in this respect.Tax Invoice for Swiggy Charges
+
+CUSTOMER NAME:
+Sachin Bhadoria
+
+INVOICE NO:
+2020-02/C/990000572
+
+BILLING ADDRESS:
+Tilakraidi, Jnarkhand, India
+
+Date of Invoice: 01/02/2020, 09:23
+PM
+
+Supply under RCM: No
+
+Fee Breakup
+
+Delivery Fee
+
+Delivery Fee Discount
+Net Delivery Fee
+CGST @ 9.00%
+SGST @ 9.00%
+
+TOTAL
+
+CORPORATE OFFICE ADDRESS:
+
+Bundl Technologies Pvt. Ltd. No.55 Sy No.814, Ground Floor, 1&J Block, Embassy Tech
+Village, Outer Ring Road, Devarbisanahalli,
+Bengaluru, Karnataka — 560103
+
+HSN, GSTIN, SUPPLIER ADDRESS:
+
+SAC code : 996813(delivery fee)
+999794(cancellation fee)
+GSTIN:20AAFCB7707D1Z8 7th Floor, Unit
+No 2A, 3A and 3B, Nile Commercial complex,
+Old Hazari Bagh Road, Ranchi, Ranchi,
+Jharkhand, 824001
+CIN:U74110KA2013PTC096530
+
+= 20.00
+= -18.90
+X 0.93
+= 0.08
+= 0.08
+
+X11
+
+Disclaimer: This is an acknowledgement of Delivery of the Order and not an actual invoice. Details mentioned above including
+the menu prices and taxes (as applicable) are as provided by the Restaurant to Swiggy. Responsibility of charging (or not
+charging) taxes lies with the Restaurant and Swiggy disclaims any liability that may arise in this respect.

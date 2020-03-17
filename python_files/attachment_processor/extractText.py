@@ -4,8 +4,9 @@ import pytesseract
 import sys 
 from pdf2image import convert_from_path 
 import os
+
+# toDo    return extracted file path address from this function
 def downloadFile( fileUrl , extension ):
-    
     r = requests.get(fileUrl) # create HTTP response object 
     imagePathList = []
     if(extension == "file" ):
@@ -25,7 +26,8 @@ def downloadFile( fileUrl , extension ):
             f.write(r.content)
         imagePathList.append("downloadFile.jpg")
     
-    generateTextFile( imagePathList ) 
+    generateTextFile( imagePathList )
+    return "out_text.txt" 
 
 def generateTextFile( imagePathList) :
             

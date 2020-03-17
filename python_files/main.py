@@ -2,7 +2,7 @@
 import os 
 from dotenv import load_dotenv
 load_dotenv()
-from attachment_processor.attachment_helper import processAttachment 
+from  python_files.attachment_processor.attachment_helper  import processAttachment 
 import boto3
 
 botName = os.getenv('BOT_NAME')
@@ -31,34 +31,17 @@ def receiveMessage( message ):
     
     sender_id = message['sender']['id']
     response = None
-    if message.get('attachment'):
-        downloadUrl = message['attachment']['url']
-        fileType = message['attachment']['type']
+    if message['message'].get('attachment'):
+        downloadUrl = message['message']['attachment']['url']
+        fileType = message['message']['attachment']['type']
         data = processAttachment( downloadUrl, fileType  )
-        response = sendSlotValuesToLex( data , sender_id , intentName ) 
+        response = sendSlotValuesToLex( data , sender_id  ) 
     
-    elif message.get('text'):
-        response = sendTextToLex( message['text'],sender_id )
-        
-def sendTextToLex( message , sender_id  ):
+    elif message['message'].get('text'):
+        response = sendTextToLex( message['message']['text'],sender_id )
     
-    #request and response syntax
-    '''  {
-            # response = client.post_text(
-            #     botName='string',
-            #     botAlias='string',
-            #     userId='string',
-            #     sessionAttributes={
-            #         'string': 'string'
-            #     },
-            #     requestAttributes={
-            #         'string': 'string'
-            #     },
-            #     inputText='string'
-            # )
-        }
-    '''
-    #response syntax   
+    print( response['message'] )
+     #response syntax   
     '''      {
                 'intentName': 'string',
                 'slots': {
@@ -95,7 +78,27 @@ def sendTextToLex( message , sender_id  ):
                 },
                 'sessionId': 'string'
             }
+    '''   
+        
+def sendTextToLex( message , sender_id  ):
+    
+    #request syntax
+    '''  {
+            # response = client.post_text(
+            #     botName='string',
+            #     botAlias='string',
+            #     userId='string',
+            #     sessionAttributes={
+            #         'string': 'string'
+            #     },
+            #     requestAttributes={
+            #         'string': 'string'
+            #     },
+            #     inputText='string'
+            # )
+        }
     '''
+    
     client = boto3.client('lex-runtime')
     response = client.post_text(
         botName= botName ,
@@ -150,15 +153,27 @@ def sendSlotValuesToLex( data , sender_id ):
         },
         recentIntentSummaryView= get_session_response.get('recentIntentSummaryView') 
     ) 
-    print(response)
+    return response
     
     
-    
-    
+
      
 if __name__ == "__main__":
-    #sendSlotValuesToLex({'category':'Food'},'1234567')    
-
+    #sendSlotValuesToLex({'category':'Food'},'1234567')   
+    message =   {
+            'sender':{
+                'id': '098',
+                'name': 'Pranjal'
+            },
+            'message':{
+                'text':"Yes"
+                # 'attachment':{
+                #     'type': "file",
+                #     'url': 'http://127.0.0.1:5500/bills/bill2.pdf'   
+                # }
+            }
+        }
+    receiveMessage( message )
    
     
     
