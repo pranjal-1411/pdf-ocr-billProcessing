@@ -43,9 +43,9 @@ def receiveMessage( message ):
     
     messageArray = [] 
     
-     if response is None : 
-         messageArray.append('Some error occured')
-         return messageArray
+    if response is None : 
+        messageArray.append('Some error occured')
+        return messageArray
     
     if response['message'][0] == '{':
         response_json = json.loads(response['message'])
