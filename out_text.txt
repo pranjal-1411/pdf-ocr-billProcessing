@@ -1,64 +1,29 @@
-as lees sepa COURTYARD
+G swiccy
 
-tt
-Original Bil 07.08.17 aarniol
+Thanks for choosing Swiggy, Sachin Bhadoria! Here are your order details:
 
- 
+Order No: #63647164302 Delivery To:
+Order placed at: 01/02/2020, 09:16 PM Sachin Bhadoria
+Order delivered at: 01/02/2020, 09:43 PM Gulmohar Garden, Tilakraidi, Jharkhand, India
 
- 
+Order Status: Delivered
 
- 
+Ordered from:
 
- 
+Dhaba Cafe
+LG 5, NALANDA TREAT CENTRE, KOLAKUSMA ROAD,
+NEAR BIG BAZAR, DHANBAD
 
- 
+Item Name Quantity Price
+Choco Snow Waffle 1 = 149
+Item Total: = 149
 
- 
+Order Packing Charges: XR 7
 
-Original Bill date BENGALURU
-INFORMATION INVOICE OUTER RING ROAD
-Bill No. 3333‘Mr Priyom Sarkar Nee
-JP Techno Park 31 ee .
-Miller Tank Bunk Road Room No 6041
-Vasant Nagar : INR
-Bengaluru KA 360052 Baie oe
-India Guests 1
-Acrival + 06-AUG-17 23:59:00
-Guest Name: Mr Priyom Sarkar
-ch Departure 07-AUG-17 00:00:00
-ravel Agent;
-inte in: SLAYEKO7-AUG-17 09:19:41
-Company VIACOM 18. ee
-Membership:
-Per TxD; 29aatCauenoxay ee
-Billing s
-Date Description Reference Debit Credit
-6-08.17 Accomodation Charges 9,000.00
-06-0817 Rooms SGST 14% 1,225.00
-06-08-17 Rooms CGST 14% 1,225.00
-06-08-17 Package MoMo Cafe SGST 14% 35.00
-06-08-17 Package MoMo Cafe CGS 14% 35.00
-06-0817 Visa Card 11,520.00
-XRXRXXNKNKANSVN XXIKX
-‘Yotal INR 11,520.00 11,520.00
-Balance INK
-VAT INR
-HSNISACCODE SALES GST TAX SGST TAX, IGST TAX CESS TAX CESS TAX 2
-996311 9,000.00 1,260.00 1,260.00 0.00 0.00
-casieR,
-___
+Delivery Charges: X 20
 
-Your
-Ip Reds ony
-in ea
+Grand Total: 176
 
-tn with such
-
-nt Fr eamed: vill be rete to your account aa wil. Ape
-nlm ai
-
-lity shat
-
-errs by Marriott, Bengaluru Outer Ring Road (A Unit of Sambi JV Business Hotels Pvt, Ltd.)
-Global ‘Technology Park, Marathahali-KellandurOuter Ring Road, Bengaluru - 560103
-T+91-80-71203040 ; F 491-80-71203050 ; www.courtyard.com
+Disclaimer: This is an acknowledgement of Delivery of the Order and not an actual invoice. Details mentioned above including
+the menu prices and taxes (as applicable) are as provided by the Restaurant to Swiggy. Responsibility of charging (or not
+charging) taxes lies with the Restaurant and Swiggy disclaims any liability that may arise in this respect.

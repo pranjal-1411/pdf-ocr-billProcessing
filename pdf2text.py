@@ -5,7 +5,7 @@ import sys
 from pdf2image import convert_from_path 
 import os 
   
-PDF_file = "ticket2.pdf"
+PDF_file = "bill2.pdf"
 
 pages = convert_from_path(PDF_file) 
  
@@ -16,14 +16,16 @@ for page in pages:
     filename = "page_"+str(image_counter)+".jpg"
 
     page.save(filename, 'JPEG') 
- 
+    
     image_counter = image_counter + 1
+
+    break
   
 filelimit = image_counter-1
 
 outfile = "out_text.txt"
 
-f = open(outfile, "a") 
+f = open(outfile, "w") 
 
 for i in range(1, filelimit + 1): 
 

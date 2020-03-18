@@ -3,12 +3,21 @@ import re
 def GetAmount(inFile):
 
     f = open(inFile,"r")
-    Amount = "([0-9]+)\.([0-9]+)"
+    Amount = "((([0-9]+)\.([0-9]+))|([0-9]+))"
+    ans = None
     for line in f:
         x = re.search(Amount, line)
-        if x :
+        if x and findPattern(line)  :
             ans = x.group()
-    print(ans)
     f.close()
+    print(ans)
+    return ans 
 
-GetAmount("out_text.txt")
+def findPattern( line ):
+    
+    if re.search(r'Total',line,re.IGNORECASE) : return True 
+    # Add other such statements and don't forget to add ignoreCase 
+    return False; 
+
+if __name__ == "__main__":
+    GetAmount("out_text.txt")
