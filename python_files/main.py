@@ -1,5 +1,6 @@
 
 import os 
+import json
 from dotenv import load_dotenv
 load_dotenv()
 from  python_files.attachment_processor.attachment_helper  import processAttachment 
@@ -40,7 +41,21 @@ def receiveMessage( message ):
     elif message['message'].get('text'):
         response = sendTextToLex( message['message']['text'],sender_id )
     
-    print( response['message'] )
+    messageArray = [] 
+    
+     if response is None : 
+         messageArray.append('Some error occured')
+         return messageArray
+    
+    if response['message'][0] == '{':
+        response_json = json.loads(response['message'])
+        for message in response_json['messages']:
+            messageArray.append( message['value'] )
+    else :
+        messageArray.append( response['message'] )    
+    
+    print( messageArray )
+    
      #response syntax   
     '''      {
                 'intentName': 'string',
@@ -155,8 +170,6 @@ def sendSlotValuesToLex( data , sender_id ):
     ) 
     return response
     
-    
-
      
 if __name__ == "__main__":
     #sendSlotValuesToLex({'category':'Food'},'1234567')   
@@ -166,7 +179,7 @@ if __name__ == "__main__":
                 'name': 'Pranjal'
             },
             'message':{
-                'text':"Yes"
+                'text':"Hi"
                 # 'attachment':{
                 #     'type': "file",
                 #     'url': 'http://127.0.0.1:5500/bills/bill2.pdf'   
